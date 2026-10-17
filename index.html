@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="خدمات مشورتی مالی و مالیاتی مقدم؛ خدمات حسابداری، بیلانس‌سازی و مشاوره مالیاتی">
+<title>مقدم | خدمات مشورتی مالی و مالیاتی</title>
+<style>
+:root{--navy:#102a43;--navy2:#173d5c;--gold:#d7b56d;--cream:#f7f5f0;--ink:#1b2b3a;--muted:#627181;--white:#fff;--line:#e5e8ec}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.8}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
+header{background:var(--navy);color:white;position:sticky;top:0;z-index:10;border-bottom:1px solid #29465e}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{width:48px;height:48px;border-radius:12px;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-weight:900;font-size:22px}
+.brand strong{display:block;letter-spacing:1.5px;color:#f3dca7;font-size:20px}
+.brand small{display:block;font-size:11px;color:#e2e9ef}
+nav{display:flex;gap:22px;align-items:center;font-size:14px}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;justify-content:center;align-items:center;background:var(--gold);color:var(--navy);font-weight:700;padding:11px 19px;border-radius:9px;border:0;cursor:pointer;font-family:inherit}
+.btn.outline{background:transparent;color:white;border:1px solid #8ea2b4}
+.hero{background:linear-gradient(125deg,var(--navy),var(--navy2));color:white;padding:76px 0 68px;overflow:hidden;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+.kicker{color:var(--gold);font-size:14px;font-weight:700;margin:0 0 12px}
+h1{font-size:clamp(30px,4vw,48px);line-height:1.45;margin:0 0 18px;max-width:700px}
+.hero p{color:#e0e7ef;max-width:620px;margin:0 0 26px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-art{min-height:260px;border:1px solid #426078;border-radius:24px;background:rgba(255,255,255,.04);padding:26px;display:flex;flex-direction:column;justify-content:space-between;position:relative}
+.hero-art:before{content:"";position:absolute;width:160px;height:160px;border-radius:50%;border:1px solid #7c8f9f;left:-50px;top:-45px;opacity:.35}
+.art-icon{font-size:48px;color:var(--gold)}
+.chart{height:95px;display:flex;align-items:end;gap:12px;border-bottom:1px solid #698093;padding:0 10px}
+.chart span{flex:1;background:linear-gradient(var(--gold),#a57f3b);border-radius:5px 5px 0 0}
+.art-label{font-size:13px;color:#e0e7ef;margin-top:12px}
+section{padding:64px 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 34px}
+.section-head h2{font-size:30px;color:var(--navy);margin:0 0 10px}
+.section-head p{margin:0;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{background:white;border:1px solid var(--line);border-radius:16px;padding:24px 20px;box-shadow:0 8px 24px rgba(16,42,67,.04)}
+.card .ico{width:48px;height:48px;display:grid;place-items:center;background:#f6edd8;color:#896522;border-radius:12px;font-size:23px;margin-bottom:15px}
+.card h3{font-size:17px;color:var(--navy);margin:0 0 8px}
+.card p{font-size:14px;color:var(--muted);margin:0}
+.about{background:white}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.about h2{font-size:30px;color:var(--navy);margin:0 0 14px}
+.about p{color:var(--muted)}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.point{background:var(--cream);border-radius:10px;padding:12px;font-size:14px}
+.point b{color:var(--navy)}
+.note{background:var(--navy);color:white;border-radius:20px;padding:28px}
+.note h3{color:var(--gold);margin-top:0}
+.note p{color:#e0e7ef}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:26px}
+.contact-info{background:var(--navy);color:white;border-radius:18px;padding:28px}
+.contact-info h3{color:var(--gold);margin-top:0}
+.contact-info p{color:#e0e7ef;font-size:14px}
+.contact-form{background:white;border:1px solid var(--line);border-radius:18px;padding:28px}
+label{display:block;font-size:14px;font-weight:700;margin:12px 0 5px}
+input,textarea,select{width:100%;padding:12px;border:1px solid #d6dde4;border-radius:9px;font:inherit;background:#fff}
+textarea{min-height:100px;resize:vertical}
+footer{background:#0b2033;color:#d6e0e8;padding:24px 0;font-size:13px}
+.footer-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.small{font-size:12px;color:#738293}
+@media(max-width:850px){nav{gap:12px}.cards{grid-template-columns:repeat(2,1fr)}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-art{min-height:220px}.hero{padding:54px 0}}
+@media(max-width:560px){.nav{padding:12px 0;align-items:flex-start}.brand strong{font-size:17px}nav{display:none}.nav .btn{font-size:12px;padding:9px 10px}.cards{grid-template-columns:1fr}.points{grid-template-columns:1fr}.section-head h2,.about h2{font-size:25px}section{padding:46px 0}.contact-form,.contact-info{padding:20px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="صفحه اصلی مقدم">
+      <span class="mark">م</span>
+      <span><strong>MOQADDAM</strong><small>خدمات مشورتی مالی و مالیاتی</small></span>
+    </a>
+    <nav aria-label="منوی اصلی">
+      <a href="#home">صفحه اصلی</a><a href="#services">خدمات ما</a><a href="#about">درباره ما</a><a href="#contact">تماس با ما</a>
+    </nav>
+    <a class="btn" href="#contact">درخواست مشاوره</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">دقت مالی، اعتماد تجارتی</p>
+      <h1>مدیریت مطمئن امور مالی و مالیاتی کسب‌وکار شما</h1>
+      <p>با خدمات حرفه‌ای حسابداری، بیلانس‌سازی و مشاوره مالیاتی مقدم، تصمیم‌های مالی خود را آگاهانه‌تر و منظم‌تر بگیرید.</p>
+      <div class="actions"><a class="btn" href="#services">مشاهده خدمات</a><a class="btn outline" href="#contact">تماس با ما</a></div>
+    </div>
+    <div class="hero-art" aria-label="تصویر تزئینی نمودار مالی">
+      <div><div class="art-icon">▥</div><strong>شفافیت در حساب‌ها؛ اطمینان در تصمیم‌ها</strong><div class="art-label">خدمات مشورتی مالی و مالیاتی مقدم</div></div>
+      <div class="chart" aria-hidden="true"><span style="height:30%"></span><span style="height:48%"></span><span style="height:39%"></span><span style="height:68%"></span><span style="height:57%"></span><span style="height:88%"></span></div>
+    </div>
+  </div>
+</section>
+<section id="services">
+  <div class="wrap">
+    <div class="section-head"><h2>خدمات ما</h2><p>راهکارهای حسابداری و مالیاتی متناسب با نیاز کسب‌وکار شما</p></div>
+    <div class="cards">
+      <article class="card"><div class="ico">▤</div><h3>خدمات مالیاتی</h3><p>راهنمایی در طی مراحل اسناد مالیاتی و پیگیری امور مربوط به تصفیه مالیاتی.</p></article>
+      <article class="card"><div class="ico">✓</div><h3>اظهارنامه‌های مالیاتی</h3><p>کمک در خانه‌پری و تنظیم اظهارنامه‌ها بر اساس اسناد و معلومات ارائه‌شده.</p></article>
+      <article class="card"><div class="ico">▦</div><h3>حسابداری و بیلانس‌سازی</h3><p>تنظیم اسناد، گزارش‌های مالی و بیلانس برای تصمیم‌گیری بهتر.</p></article>
+      <article class="card"><div class="ico">↗</div><h3>مشاوره مالی</h3><p>مشوره در امور حسابداری، بودجه‌بندی و نظم‌دهی امور مالی کسب‌وکار.</p></article>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div><p class="kicker">درباره مقدم</p><h2>همراه قابل اعتماد شما در امور مالی</h2><p>هدف ما کمک به کسب‌وکارها برای مدیریت منظم اسناد، درک بهتر وضعیت مالی و رسیدگی دقیق‌تر به امور مالیاتی است. خدمات نهایی بر اساس اسناد مشتری و مقررات قابل تطبیق ارائه می‌شود.</p>
+      <div class="points"><div class="point">✓ <b>دقت در اسناد</b></div><div class="point">✓ <b>حفظ محرمانگی</b></div><div class="point">✓ <b>ارتباط روشن</b></div><div class="point">✓ <b>راهکار عملی</b></div></div>
+    </div>
+    <aside class="note"><h3>شعار ما</h3><p>«با ما امور مالی و مالیاتی خود را حرفه‌ای و مطمئن مدیریت کنید!»</p><hr style="border:0;border-top:1px solid #426078;margin:22px 0"><p>برای آشنایی با خدمات و بررسی نیازهای کسب‌وکار خود، درخواست مشاوره بفرستید.</p><a class="btn" href="#contact">درخواست مشاوره</a></aside>
+  </div>
+</section>
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head"><h2>تماس با ما</h2><p>برای دریافت معلومات بیشتر یا درخواست مشاوره با ما در تماس شوید.</p></div>
+    <div class="contact-grid">
+      <div class="contact-info"><h3>معلومات تماس</h3><p>📍 افغانستان، ولایت پروان، مقابل مستوفیت ولایت پروان</p><p>✉️ abdulwaliwali718@gmail.com</p><p>☎️ 0786718756</p><p class="small">معلومات تماس و آدرس را پیش از نشر نهایی بررسی کنید.</p></div>
+      <form class="contact-form" id="contactForm">
+        <label for="name">نام شما</label><input id="name" name="name" required placeholder="نام و تخلص">
+        <label for="phone">شماره تماس</label><input id="phone" name="phone" required placeholder="شماره تماس شما">
+        <label for="service">خدمت مورد نیاز</label><select id="service" name="service"><option>مشاوره مالیاتی</option><option>اظهارنامه مالیاتی</option><option>حسابداری و بیلانس‌سازی</option><option>مشاوره مالی</option><option>سایر خدمات</option></select>
+        <label for="message">توضیحات</label><textarea id="message" name="message" placeholder="مختصر درباره نیاز خود بنویسید"></textarea>
+        <button class="btn" type="submit" style="margin-top:16px;width:100%">آماده‌سازی درخواست در ایمیل</button>
+        <p class="small">این نمونه فورم درخواست را در برنامه ایمیل شما آماده می‌کند؛ هنوز به سیستم آنلاین وصل نیست.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><span>© مقدم — خدمات مشورتی مالی و مالیاتی</span><span>دقت • اعتماد • شفافیت</span></div></footer>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const f = new FormData(this);
+  const subject = encodeURIComponent('درخواست مشاوره از ویب‌سایت مقدم');
+  const body = encodeURIComponent('نام: '+f.get('name')+'\nشماره تماس: '+f.get('phone')+'\nخدمت مورد نیاز: '+f.get('service')+'\nتوضیحات: '+f.get('message'));
+  window.location.href = 'mailto:abdulwaliwali718@gmail.com?subject='+subject+'&body='+body;
+});
+</script>
+</body>
+</html>
